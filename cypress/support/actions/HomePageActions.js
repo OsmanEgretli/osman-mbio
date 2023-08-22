@@ -6,6 +6,7 @@ class HomePageActions {
   
     visit() {
         cy.visit('https://www.mercedes-benz.co.uk');
+        cy.intercept({ resourceType: /xhr|fetch/}, {log: false });
     }
     acceptCookies() {
         
@@ -14,13 +15,20 @@ class HomePageActions {
     }
 
     openOurModels() {
-        home.getHomeHeaderMenuItems("Our Models").click();
+        home.getHomeHeaderMenuItems(" Our models ").click();
     }
 
-    selectHatchbacksAndAClass() {
-        cy.get('[Your selector for Hatchbacks]').click();
-        cy.get('[Your selector for A Class]').click();
+    selectOurModels() {
+        home.selectOurModels("Hatchbacks").click();
     }
+    selectHatchbackModel() {
+        home.selectHatchbackModel("A-Class Hatchback ").click();
+    }
+    
+    // selectHatchbacksAndAClass() {
+    //     cy.get('[Your selector for Hatchbacks]').click();
+    //     cy.get('[Your selector for A Class]').click();
+    // }
 
 }
 

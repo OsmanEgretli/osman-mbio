@@ -10,6 +10,7 @@ describe('Mercedes Website', () => {
         // cy.wait(10000)
         home.acceptCookies()
         home.openOurModels()
-        
+        home.selectOurModels()
+        home.selectHatchbackModel()
     });
 });
