@@ -22,7 +22,7 @@ class HomePageActions {
         home.selectOurModels("Hatchbacks").click();
     }
     selectHatchbackModel() {
-        home.selectHatchbackModel("A-Class Hatchback ").click();
+        home.selectHatchbackModel("B-Class Hatchback ").click();
     }
     
     // selectHatchbacksAndAClass() {

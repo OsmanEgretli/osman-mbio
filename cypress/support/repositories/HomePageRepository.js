@@ -26,9 +26,7 @@ class HomePageRepository
   {
       return cy.get('[slot="seamless-vmos-flyout"]')
           .shadow()
-          .find('[flyout-id="test-flyout-vmos"]')
-          .shadow()
-          .find('[role="menuitem"]')
+          .find('[class="_flyout-group-item_ggfyq_47"]')
           .contains(`${itemName}`);
   }
 }
