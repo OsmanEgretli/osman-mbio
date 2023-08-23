@@ -23,13 +23,12 @@ class CarConfiguratorPageRepository
 
     }
 
-    getFuelTypeDropdownArrow(){
+    getCarPriceFromCard(){
         return cy.get('[component-id="8f90efb9b25acd626539281bf797a113"]')
         .shadow()
-        .find('[class="cc-motorization-filters-primary-filters--multi-select wb-multi-select hydrated"]')
-        .shadow()
-        .find('[class="caret-icon wb-icon hydrated"]')
-        
+        .find('[class="cc-motorization-header__price cc-text ng-star-inserted wb-text hydrated"]')
+
+
     }
 
 

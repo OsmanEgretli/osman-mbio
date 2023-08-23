@@ -20,8 +20,9 @@ describe('Mercedes Website', () => {
         modelOverview.checkUrlContainsCarModelName("a-class")
         modelOverview.goToBuildYourCar()
         configurator.selectAFuelType("Diesel")
+        configurator.saveHighestAndLowestPrices()
         cy.screenshot('results-screenshot', {
-            capture: 'fullPage'
+            capture: 'fullPage',overwrite: true
           });
           
     });
