@@ -18,11 +18,11 @@ class HomePageActions {
         home.getHomeHeaderMenuItems(" Our models ").click();
     }
 
-    selectOurModels() {
-        home.selectOurModels("Hatchbacks").click();
+    selectOurModels(carModel) {
+        home.selectOurModels(carModel).click();
     }
-    selectHatchbackModel() {
-        home.selectHatchbackModel("B-Class Hatchback ").click();
+    selectHatchbackModel(modelName) {
+        home.selectHatchbackModel(modelName).click();
     }
     
     // selectHatchbacksAndAClass() {
