@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress run",
-    "chromeHeadless": "npm run test -- -b chrome --headless --spec cypress/integration/Tests/Test.js",
-    "orders": "npm run test -- -b chrome --headless --spec cypress/integration/Tests/Test.js --env version=dev"
+    "chromeHeadless": "npm run test -- -b chrome --headless --spec cypress/integration/Tests/AClassTest.js",
+    "chromeHeadlessDev": "npm run test -- -b chrome --headless --spec cypress/integration/Tests/AClassTest.js --env version=dev",
+    "firefoxHeadlessDev": "npm run test -- -b firefox --headless --spec cypress/integration/Tests/AClassTest.js --env version=dev"
+
   },
   "keywords": [],
   "author": "",

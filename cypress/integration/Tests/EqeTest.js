@@ -5,25 +5,25 @@ import ModelOverviewPageActions from "../../support/actions/ModelOverviewPageAct
 const home = new HomePageActions()
 const modelOverview = new ModelOverviewPageActions()
 const configurator = new CarConfiguratorPageActions()
-describe('Mercedes Website', () => {
+describe('Validation of Mercedes Website Functionality', () => {
 
-    it('Validates A Class model prices', () => {
-       
+    it('Should Validate Pricing Information for EQE Model', () => {
+
         home.visit()
-        // cy.wait(10000)
         home.acceptCookies()
         home.openOurModels()
-        home.selectOurModels("Hatchbacks")
-        home.selectHatchbackModel("A-Class Hatchback")
-        modelOverview.checkNavigationText("A-Class Hatchback")
-        modelOverview.checkStageImageText("A-Class Hatchback")
-        modelOverview.checkUrlContainsCarModelName("a-class")
+        home.selectCarGroup("Saloons")
+        home.selectCarModel("EQE Saloon")
+        modelOverview.checkNavigationText("EQE Saloon")
+        modelOverview.checkStageImageText("EQE Saloon")
+        modelOverview.checkUrlContainsCarModelName("eqe")
         modelOverview.goToBuildYourCar()
-        configurator.selectAFuelType("Diesel")
+        configurator.checkCarImage('EQE-Saloon')
+        //configurator.selectAFuelType("Super")
         configurator.saveHighestAndLowestPrices()
         cy.screenshot('results-screenshot', {
             capture: 'fullPage',overwrite: true
-          });
-          
+        });
+
     });
 });
