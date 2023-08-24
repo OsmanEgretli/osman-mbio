@@ -94,6 +94,19 @@ Below are the NPM scripts available for running the Cypress tests:
   > Runs the AClassTest.js in headless mode on Firefox with development environment configurations.
 
 To execute any of these, you can run the following command in your terminal:
+------------------------------------------------------------
 
-```bash
-npm run [SCRIPT NAME ]
+##  Generating Test Reports 📊
+
+ > After every test run, a detailed report is generated with a unique timestamp attached to the report name. This ensures that each test run has its own distinct log, making it easier to backtrack or compare results across multiple test runs.
+------------------------------------------------------------
+#### Report Directory: cypress/reports
+------------------------------------------------------------
+#### Report Filename: [name]-run-DD-MMMM-YYYY-HH_mm_ss
+
+##  Car Prices Text File🚗💰
+ > The saveHighestAndLowestPrices() function captures the highest and lowest car prices from the list of available options. This data is then saved in a text file with a dynamic name that includes a timestamp, ensuring each file is unique.
+------------------------------------------------------------
+#### File Directory: Project root directory
+------------------------------------------------------------
+#### File Name: car_prices_DD-MM-YYYY_HH-MM-SS.txt
