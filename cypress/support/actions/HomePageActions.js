@@ -3,13 +3,14 @@ import HomePageRepository from "../repositories/HomePageRepository";
 const home = new HomePageRepository()
 
 class HomePageActions {
-  
+
     visit() {
         cy.visit('https://www.mercedes-benz.co.uk');
-        cy.intercept({ resourceType: /xhr|fetch/}, {log: false });
+        cy.intercept({resourceType: /xhr|fetch/}, {log: false});
     }
+
     acceptCookies() {
-        
+
         home.getAgreeToAllButton().click()
 
     }
@@ -21,14 +22,10 @@ class HomePageActions {
     selectOurModels(carModel) {
         home.selectOurModels(carModel).click();
     }
+
     selectHatchbackModel(modelName) {
         home.selectHatchbackModel(modelName).click();
     }
-    
-    // selectHatchbacksAndAClass() {
-    //     cy.get('[Your selector for Hatchbacks]').click();
-    //     cy.get('[Your selector for A Class]').click();
-    // }
 
 }
 

@@ -1,0 +1,112 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-08-23T20:16:07.538Z",
+    "end": "2023-08-23T20:16:29.871Z",
+    "duration": 22333,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "544ea493-1693-47d6-937f-84531e8f0674",
+      "title": "",
+      "fullFile": "cypress\\integration\\Tests\\Test.js",
+      "file": "cypress\\integration\\Tests\\Test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7f1d4f6c-0df9-45e6-8cea-77e587227de8",
+          "title": "Mercedes Website",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validates A Class model prices",
+              "fullTitle": "Mercedes Website Validates A Class model prices",
+              "timedOut": null,
+              "duration": 20106,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "home.visit();\n// cy.wait(10000)\nhome.acceptCookies();\nhome.openOurModels();\nhome.selectOurModels(\"Hatchbacks\");\nhome.selectHatchbackModel(\"A-Class Hatchback\");\nmodelOverview.checkNavigationText(\"A-Class Hatchback\");\nmodelOverview.checkStageImageText(\"A-Class Hatchback\");\nmodelOverview.checkUrlContainsCarModelName(\"a-class\");\nmodelOverview.goToBuildYourCar();\nconfigurator.selectAFuelType(\"Diesel\");\nconfigurator.saveHighestAndLowestPrices();\ncy.screenshot('results-screenshot', {\n  capture: 'fullPage',\n  overwrite: true\n});",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[class=\"cc-motorization-filters-primary-filters--multi-select wb-multi-select hydrated\"]`, but never found it. Queried from:\n\n              > cy.get([component-id=\"8f90efb9b25acd626539281bf797a113\"]).shadow()",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[class=\"cc-motorization-filters-primary-filters--multi-select wb-multi-select hydrated\"]`, but never found it. Queried from:\n\n              > cy.get([component-id=\"8f90efb9b25acd626539281bf797a113\"]).shadow()\n    at CarConfiguratorPageRepository.getOpenFuelTypeDropdown (webpack://osman-mbio/./cypress/support/repositories/CarConfiguratorPageRepository.js:9:9)\n    at CarConfiguratorPageActions.selectAFuelType (webpack://osman-mbio/./cypress/support/actions/CarConfiguratorPageActions.js:10:24)\n    at Context.eval (webpack://osman-mbio/./cypress/integration/Tests/Test.js:22:21)",
+                "diff": null
+              },
+              "uuid": "ec2a31e7-3f16-422f-b7cb-43e13ef3fd1c",
+              "parentUUID": "7f1d4f6c-0df9-45e6-8cea-77e587227de8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "ec2a31e7-3f16-422f-b7cb-43e13ef3fd1c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 20106,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "[name]-run-23-August-2023-22_16_02",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "quiet": true,
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "reportFilename": "[name]-run-23-August-2023-22_16_02"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
