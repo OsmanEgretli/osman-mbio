@@ -5,32 +5,30 @@
 
 #### This repository contains automated tests written in Cypress for the Car Configurator web application. The test suite is organized following the Page Object Model pattern, making it easier to maintain and extend the code.
 ## Table of Contents
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Running Tests](#running-tests)
+- [Project Structure]
+- [Installation]
+- [Running Tests]
 
-### Pre-requisites
+### Installation
 
-1. Make sure you have Node.js installed on your machine.
-2. Clone this repository to your local machine using the following command:
-
-### Clone the repository 
+- Make sure you have Node.js installed on your machine.
+- Clone this repository to your local machine:
 
 `git clone https://github.com/OsmanEgretli/osman-mbio.git`
 
-### Navigate to the project folder
+### Navigate to the project folder:
 
 `cd osman-mbio`
 
-### Install the cypress by running
+### Install Cypress:
 
 `npm install cypress --save-dev`
 
-### To install the required packages
+### Install required packages
 
 `npm install`
 
-### Start Cypress Test Runner by running
+### Start Cypress Test Runner
 
 `npx cypress open`
 
@@ -74,31 +72,29 @@
 ## NPM Scripts 📜
 
 Below are the NPM scripts available for running the Cypress tests:
-
-- `npm run test`: 
-  > This will run the Cypress tests in the default browser.
-
-- `npm run chromeHeadless`: 
-  > Runs the AClassTest.js in headless mode on Chrome.
-
-- `npm run chromeHeadlessDev`: 
-  > Runs the AClassTest.js in headless mode on Chrome with development environment configurations.
-
-- `npm run firefoxHeadlessDev`: 
-  > Runs the AClassTest.js in headless mode on Firefox with development environment configurations.
+- `npm run test`: Run Cypress tests in the default browser.
+- `npm run chromeHeadless`: Run tests in headless mode on Chrome.
+- `npm run chromeHeadlessDev`: Run tests in headless mode on Chrome with dev configurations.
+- `npm run firefoxHeadlessDev`: Run tests in headless mode on Firefox with dev configurations.
 
 ------------------------------------------------------------
 
 ##  Generating Test Reports 📊
 
- > After every test run, a detailed report is generated with a unique timestamp attached to the report name. This ensures that each test run has its own distinct log, making it easier to backtrack or compare results across multiple test runs.
+After each test run, a detailed report is generated with a timestamp attached to the report name. This ensures distinct logs for each test run, aiding result comparison and analysis.
+
+- Report Directory: cypress/reports
+- Report Filename: [name]-run-DD-MMMM-YYYY-HH_mm_ss
 ------------------------------------------------------------
 #### Report Directory: cypress/reports
 ------------------------------------------------------------
 #### Report Filename: [name]-run-DD-MMMM-YYYY-HH_mm_ss
 
 ##  Car Prices Text File🚗💰
- > The saveHighestAndLowestPrices() function captures the highest and lowest car prices from the list of available options. This data is then saved in a text file with a dynamic name that includes a timestamp, ensuring each file is unique.
+The `saveHighestAndLowestPrices()` function captures the highest and lowest car prices from available options. This data is saved in a text file with a dynamic name containing a timestamp, ensuring uniqueness.
+
+- File Directory: Project root directory
+- File Name: car_prices_DD-MM-YYYY_HH-MM-SS.txt
 ------------------------------------------------------------
 #### File Directory: Project root directory
 ------------------------------------------------------------
