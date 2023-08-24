@@ -8,7 +8,6 @@
 - [Project Structure](#project-structure)
 - [Installation](#installation)
 - [Running Tests](#running-tests)
-- [Contributors](#contributors)
 
 ### Pre-requisites
 
@@ -71,11 +70,6 @@
 
 ## To run the tests 🔧
 
-```bash
-npm install
-
----
----
 
 ## NPM Scripts 📜
 
@@ -93,7 +87,6 @@ Below are the NPM scripts available for running the Cypress tests:
 - `npm run firefoxHeadlessDev`: 
   > Runs the AClassTest.js in headless mode on Firefox with development environment configurations.
 
-To execute any of these, you can run the following command in your terminal:
 ------------------------------------------------------------
 
 ##  Generating Test Reports 📊
