@@ -6,3 +6,4 @@ cypress/videos/
 cypress/reports/
 cypress/config/dev.json
 node_modules
+.idea/
