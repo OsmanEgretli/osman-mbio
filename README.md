@@ -21,7 +21,7 @@
 
 ### Navigate to the project folder
 
-`cd GistUITest-Cypress`
+`cd osman-mbio`
 
 ### Install the cypress by running
 
