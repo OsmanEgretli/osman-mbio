@@ -40,7 +40,7 @@
 ## Project Structure 🗂️
 
 ### Repositories 📦
-- [`CarConfiguratorPageRepository.js`](path/to/file): 
+- [`CarConfiguratorPageRepository.js`](https://github.com/OsmanEgretli/osman-mbio/blob/master/cypress/support/repositories/CarConfiguratorPageRepository.js): 
   > Repositories for elements on the car configurator page. Handles Shadow DOM elements.
   
 - [`HomePageRepository.js`](path/to/file): 
