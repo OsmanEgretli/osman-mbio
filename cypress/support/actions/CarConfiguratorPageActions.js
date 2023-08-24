@@ -5,22 +5,7 @@ const carConfigurator = new CarConfiguratorPageRepository()
 
 class CarConfiguratorPageActions {
 
-<<<<<<< HEAD
-    selectAFuelType(fuelType) {
 
-        carConfigurator.getOpenFuelTypeDropdown()
-            .scrollIntoView({block: 'center', inline: 'center'}) // This centers the element
-            .click({force: true});
-        carConfigurator.getOpenFuelTypeItem(fuelType).click({force: true})
-        cy.wait(500)
-        carConfigurator.getOpenFuelTypeDropdown().click({force: true})
-        carConfigurator.getOpenFuelTypeDropdown().click({force: true})
-    }
-
-    saveHighestAndLowestPrices() {
-        // Using the function to get all car prices
-        carConfigurator.getCarPriceFromCard().invoke('text').then((text) => {
-=======
 selectAFuelType(fuelType){
 
     carConfigurator.getOpenFuelTypeDropdown()
@@ -35,7 +20,6 @@ selectAFuelType(fuelType){
     saveHighestAndLowestPrices() {
         // Using the function to get all car prices
      carConfigurator.getCarPriceFromCard().invoke('text').then((text) => {
->>>>>>> f4fd4d29ea273d4806490b4f2f7135684eaffc80
             // Splitting prices based on spaces
             const pricesText = text.split(/\s+/).filter(t => t.startsWith('£'));
             cy.log('Prices Text:', pricesText);
