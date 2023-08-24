@@ -40,13 +40,13 @@
 ## Project Structure 🗂️
 
 ### Repositories 📦
-- [`CarConfiguratorPageRepository.js`](https://github.com/OsmanEgretli/osman-mbio/blob/master/cypress/support/repositories/CarConfiguratorPageRepository.js): 
+- [`CarConfiguratorPageRepository.js`]: 
   > Repositories for elements on the car configurator page. Handles Shadow DOM elements.
   
-- [`HomePageRepository.js`](path/to/file): 
+- [`HomePageRepository.js`]: 
   > Repositories for elements on the home page. Includes menu items and agree button.
 
-- [`ModelOverviewPageRepository.js`](path/to/file): 
+- [`ModelOverviewPageRepository.js`]: 
   > Repositories for elements on the model overview page.
   
 ---
@@ -54,13 +54,13 @@
 
 ### Actions 🎬
 
-- [`CarConfiguratorPageActions.js`](path/to/file): 
+- [`CarConfiguratorPageActions.js`]: 
   > Actions like fuel type selection and price comparison.
   
-- [`HomePageActions.js`](path/to/file): 
+- [`HomePageActions.js`]: 
   > Actions for navigating through home page items.
   
-- [`ModelOverviewPageActions.js`](path/to/file): 
+- [`ModelOverviewPageActions.js`]: 
   > Actions for the model overview page.
 ### Utilities 🔧
 
