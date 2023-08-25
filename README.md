@@ -85,10 +85,8 @@ After each test run, a detailed report is generated with a timestamp attached to
 
 - Report Directory: cypress/reports
 - Report Filename: [name]-run-DD-MMMM-YYYY-HH_mm_ss
+
 ------------------------------------------------------------
-#### Report Directory: cypress/reports
-------------------------------------------------------------
-#### Report Filename: [name]-run-DD-MMMM-YYYY-HH_mm_ss
 
 ##  Car Prices Text File🚗💰
 The `saveHighestAndLowestPrices()` function captures the highest and lowest car prices from available options. This data is saved in a text file with a dynamic name containing a timestamp, ensuring uniqueness.
