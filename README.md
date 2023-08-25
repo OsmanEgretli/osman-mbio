@@ -48,7 +48,6 @@
   > Repositories for elements on the model overview page.
   
 ---
----
 
 ### Actions 🎬
 
